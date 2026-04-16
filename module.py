@@ -9,30 +9,45 @@ class PointOfSale:
   def __init__(self):
     self.checkout_total = 0 # This is an example varialbe, remove it or change it as you please.
     self.cart = []
-    menu = "yes"
-    
     print("\nInitializing Javi's POS system...")
     
     
   def start(self): # This is the function that should be used to start the application.
-    print("\n----Menu----")
-    print("1: Show shopping cart ")
-    print("2: Add Items to the cart ")
-    print("3: Display Total")
-    print("4: Pay")
-    print("5: Bye, Bye! ")
+    while True:
+      print("\n----Menu----")
+      print("1: Show shopping cart ")
+      print("2: Add Items to the cart ")
+      print("3: Display Total")
+      print("4: Pay")
+      print("5: Exit! ")
 
-    choice = input("choose an option:")
-    
-    for i in self:
-      choice = input
+      choice = input("choose an option froim 1-5:")
+
+
       if choice == "1":
         print("this is in your cart")
+        self.cart1()
       elif choice == "2":
-        pass
+        self.add_TC2()
       elif choice == "3":
         pass
       elif choice == "4":
-        pass
+        self.purchased4()
       elif choice == "5":
+        print("bye bye!!!")
         break
+      else:
+        print("invalid choice please try again!")
+
+
+  def cart1(self):
+    pass
+
+  def add_TC2(self):       # adding items to my cart
+    thing = input("what do you want to add to your cart?")#Ask the user what they want to add
+
+  def total_price3(self):
+    pass
+  
+  def purchased4(self):
+    pass
